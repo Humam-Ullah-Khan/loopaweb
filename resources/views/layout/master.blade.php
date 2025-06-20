@@ -91,7 +91,7 @@
           <div class="small text-muted">zakariotech@gmail.com</div>
         </div>
         <div class="col-md-3">
-          <div class="fw-bold mb-2">Services</div>
+          <div class="fw-bold mb-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Services</div>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Web Design (UI/UX)</a>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Webflow Development</a>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Webflow SEO</a>
@@ -103,7 +103,7 @@
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Branding</a>
         </div>
         <div class="col-md-3">
-          <div class="fw-bold mb-2">Industry</div>
+          <div class="fw-bold mb-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Industry</div>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">B2B SaaS</a>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Artificial Intelligence</a>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Web3</a>
@@ -116,7 +116,7 @@
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Enterprises</a>
         </div>
         <div class="col-md-3">
-          <div class="fw-bold mb-2">Company</div>
+          <div class="fw-bold mb-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Company</div>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Portfolio</a>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Pricing</a>
           <a href="#" class="mb-1 d-block text-dark text-decoration-none">Contact</a>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 :root {
     /* Color Palette */
-    --primary-color: #0fa3b1; /* Teal for main buttons, headers, and navigation */
+    --primary-color: #0D6EFD; /* Teal for main buttons, headers, and navigation */
     --accent-color: #b5e2fa; /* Golden yellow for highlights and CTAs */
     --neutral-white: #ffffff; /* White for main backgrounds and text on dark backgrounds */
     --neutral-light-gray: #f9f7f3; /* Light gray for secondary backgrounds and sections */
@@ -206,7 +206,7 @@ body {
 
 .footer-section a.text-dark:hover,
 .footer-section a.text-muted:hover {
-    color: #ff5a00 !important;
+    color: var(--primary-color) !important;
 }
 .footer-section hr {
     border-top: 1px solid #ddd;
@@ -214,4 +214,8 @@ body {
 
 .footer-section abbr {
   background-color: var(--primary-color);
+}
+
+.home-hero-section {
+  font-family: var(--font-heading);
 }
