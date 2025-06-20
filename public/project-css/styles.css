@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+    /* Color Palette */
+    --primary-color: #0fa3b1; /* Teal for main buttons, headers, and navigation */
+    --accent-color: #b5e2fa; /* Golden yellow for highlights and CTAs */
+    --neutral-white: #ffffff; /* White for main backgrounds and text on dark backgrounds */
+    --neutral-light-gray: #f9f7f3; /* Light gray for secondary backgrounds and sections */
+    --neutral-dark-gray: #eddea4; /* Dark gray for body text */
+    --neutral-charcoal: #1a1a1a; /* Charcoal for footer and dark-themed sections */
+
+    /* Typography */
+    --font-heading: "Poppins", sans-serif; /* Modern, bold font for headings */
+    --font-body: "Instrument sans"; /* Clean, readable font for body text */
+    --font-navs: "Ubuntu"; /* Clean, readable font for body text */
+    --font-size-h1: 48px; /* Large heading size for desktop */
+    --font-size-h2: 32px; /* Medium heading size for desktop */
+    --font-size-h3: 24px; /* Small heading size for desktop */
+    --font-size-body: 16px; /* Standard body text size for desktop */
+    --font-size-caption: 14px; /* Smaller text for captions or secondary info */
+    --line-height-heading: 1.4; /* Line height for headings to ensure readability */
+    --line-height-body: 1.6; /* Line height for body text for better readability */
+
+    /* Responsive Typography */
+    --font-size-h1-mobile: 36px; /* H1 size for mobile devices */
+    --font-size-h2-mobile: 24px; /* H2 size for mobile devices */
+    --font-size-h3-mobile: 18px; /* H3 size for mobile devices */
+    --font-size-body-mobile: 14px; /* Body text size for mobile devices */
+    --font-size-caption-mobile: 12px; /* Caption text size for mobile devices */
+
+    /* Buttons */
+    --button-border-radius: 8px; /* Rounded corners for buttons */
+    --button-padding: 12px 24px; /* Padding for buttons to ensure touch-friendly size */
+    --button-font-size: 16px; /* Font size for button text */
+    --button-border-width: 2px; /* Border width for secondary buttons */
+
+    /* Shadows */
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards and buttons */
+
+    /* Transitions */
+    --transition-speed: 0.3s; /* Speed for hover and animation effects */
+    --transition-easing: ease; /* Smooth easing for transitions */
+}
+
+body {
+    background-color: var(--neutral-light-gray) !important;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.offcanvas-body a {
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    font-size: var(--font-size-h2);
+    font-family: var(--font-navs);
+    transition: all var(--transition-speed);
+}
+
+.offcanvas-body a:hover {
+    background-color: var(--neutral-charcoal);
+    color: var(--neutral-light-gray);
+}
+
+.offcanvas-body .btn-warning:hover {
+    background-color: var(--accent-color);
+}
+
+/* book a call button */
+.btn-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: var(--primary-color);
+    --color-outline: var(--accent-color);
+    --color-shadow: #00000080;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover,
+.btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+}
+
+.icon-arrow {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+}
+
+/* SVG */
+#arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: var(--color-background);
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+@keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+.footer-section {
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.04);
+}
+.footer-section .fw-bold {
+    font-size: 1.4rem;
+}
+.footer-section .mb-1,
+.footer-section .mb-2 {
+    font-size: 1.08rem;
+}
+.footer-section a.text-dark,
+.footer-section a.text-muted{
+  font-family: var(--font-navs);
+  transition: all var(--transition-speed);
+}
+
+.footer-section a.text-dark:hover,
+.footer-section a.text-muted:hover {
+    color: #ff5a00 !important;
+}
+.footer-section hr {
+    border-top: 1px solid #ddd;
+}
+
+.footer-section abbr {
+  background-color: var(--primary-color);
+}
