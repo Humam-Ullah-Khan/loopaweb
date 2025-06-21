@@ -40,10 +40,10 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#"><i class="ri-home-9-fill"></i> Home</a>
+            <a class="nav-link text-secondary fw-semibold" href="#hero-sec"><i class="ri-home-9-fill"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#">About Us</a>
+            <a class="nav-link text-secondary fw-semibold" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary fw-semibold" href="#">Consultations</a>
@@ -69,7 +69,7 @@
           </li>
         </ul>
         <!-- Request Pricing Button -->
-        <a href="#" class="btn btn-primary fw-semibold px-4 py-2">Request pricing</a>
+        <a href="#" class="btn btn-primary px-4 py-2">Request pricing</a>
       </div>
     </div>
   </nav>
@@ -86,21 +86,21 @@
               class="position-absolute bg-success border border-white rounded-circle"></span>
           </div>
           <div class="ms-2">
-            <div class="fw-semibold fs-4" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Humam Ullah</div>
+            <div class="fw-bold fs-4" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Humam Ullah</div>
             <div class="small text-muted my-1" style="font-size: 0.75em; font-family: Verdana, Geneva, Tahoma, sans-serif;">C.E.O @ LoopaWeb Software</div>
             <div class="d-flex align-items-center" style="font-size: 0.75em;">
               <img src="/project-images/saylani.png" alt="saylani-certified" width="15px" class="me-1">
               <span class="fw-semibold">Certified</span>
               <i class="ri-verified-badge-fill mx-1 text-primary"></i>
-              <i class="ri-star-fill text-primary me-1"></i>
+              <i class="ri-star-fill text-primary me-1 ms-2"></i>
               <span class="fw-bold">5.0</span>
-              <span class="text-decoration-underline ms-1">(4)</span>
+              <span class="text-decoration-underline ms-1">( 4 )</span>
             </div>
           </div>
         </div>
         <div class="d-flex align-items-center gap-2 flex-column py-2">
-          <a href="#" class="btn btn-primary me-2 position-relative">
-            <i class="ri-checkbox-blank-circle-fill" style="font-size: 7px; color: #31ff9f;"></i> Chat with us
+          <a href="#" class="btn btn-primary me-2 position-relative d-flex align-items-center">
+            <i class="ri-checkbox-blank-circle-fill me-2" style="font-size: 7px; color: #31ff9f;"></i> Chat with us
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
           </a>
           <a href="#" class="btn btn-primary">
@@ -113,8 +113,8 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#hero-sec">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#about-us">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#">Consultations</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#">App industries</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#">Portfolio</a></li>

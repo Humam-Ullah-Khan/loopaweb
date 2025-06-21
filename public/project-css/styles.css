@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 :root {
     /* Color Palette */
-    --primary-color: #0D6EFD; /* Teal for main buttons, headers, and navigation */
-    --accent-color: #b5e2fa; /* Golden yellow for highlights and CTAs */
+    --primary-color: #0d6efd; /* Teal for main buttons, headers, and navigation */
+    --accent-color: #1d7ccf; /* Golden yellow for highlights and CTAs */
     --neutral-white: #ffffff; /* White for main backgrounds and text on dark backgrounds */
     --neutral-light-gray: #f9f7f3; /* Light gray for secondary backgrounds and sections */
     --neutral-dark-gray: #eddea4; /* Dark gray for body text */
@@ -43,6 +44,15 @@
 
 body {
     background-color: var(--neutral-light-gray) !important;
+    font-family: var(--font-body) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-heading);
 }
 
 .navbar {
@@ -50,42 +60,51 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link {
-  font-family: var(--font-navs);
-  font-weight: normal !important;
-  
+    font-family: var(--font-navs);
+    font-weight: normal !important;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 .navbar-nav .nav-item .nav-link {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .navbar-nav .nav-item .nav-link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color, #007bff); /* fallback to Bootstrap primary */
-  transition: width 0.6s ease;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(
+        --primary-color,
+        #007bff
+    ); /* fallback to Bootstrap primary */
+    transition: width 0.6s ease;
 }
 
 .navbar-nav .nav-item .nav-link:hover::after,
 .navbar-nav .nav-item .nav-link.active::after {
-  width: 100%;
+    width: 100%;
 }
 
 .navbar-collapse .btn-primary {
-  font-family: var(--font-body);
+    font-family: var(--font-body);
 }
 
 .dropdown-toggle::after {
-  display: none !important;
+    display: none !important;
+}
+
+.btn-primary {
+    background-color: var(--accent-color) !important;
+    font-weight: 600 !important;
+    /* font-family: var(--font-navs); */
+    font-family: "macan";
 }
 
 .footer-section {
@@ -101,9 +120,9 @@ body {
     font-size: 1.08rem;
 }
 .footer-section a.text-dark,
-.footer-section a.text-muted{
-  font-family: var(--font-navs);
-  transition: all var(--transition-speed);
+.footer-section a.text-muted {
+    font-family: var(--font-navs);
+    transition: all var(--transition-speed);
 }
 
 .footer-section a.text-dark:hover,
@@ -115,9 +134,9 @@ body {
 }
 
 .footer-section abbr {
-  background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .home-hero-section {
-  font-family: var(--font-heading);
+    font-family: var(--font-heading);
 }
