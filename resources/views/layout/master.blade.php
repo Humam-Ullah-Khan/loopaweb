@@ -86,8 +86,10 @@
               class="position-absolute bg-success border border-white rounded-circle"></span>
           </div>
           <div class="ms-2">
-            <div class="fw-bold fs-4" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Humam Ullah</div>
-            <div class="small text-muted my-1" style="font-size: 0.75em; font-family: Verdana, Geneva, Tahoma, sans-serif;">C.E.O @ LoopaWeb Software</div>
+            <div class="fw-bold fs-4">Humam Ullah</div>
+            <div class="small text-muted my-1"
+              style="font-size: 0.75em; font-family: Verdana, Geneva, Tahoma, sans-serif;">C.E.O @ LoopaWeb Software
+            </div>
             <div class="d-flex align-items-center" style="font-size: 0.75em;">
               <img src="/project-images/saylani.png" alt="saylani-certified" width="15px" class="me-1">
               <span class="fw-semibold">Certified</span>
@@ -103,8 +105,8 @@
             <i class="ri-checkbox-blank-circle-fill me-2" style="font-size: 7px; color: #31ff9f;"></i> Chat with us
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
           </a>
-          <a href="#" class="btn btn-primary">
-            <i class="ri-vidicon-line"></i> Book a call
+          <a href="#" class="btn btn-primary me-2">
+            <i class="ri-vidicon-line me-2"></i> Book a call
           </a>
         </div>
       </div>
@@ -112,7 +114,7 @@
     <nav class="navbar navbar-expand-lg py-0 bg-white">
       <div class="container-fluid">
         <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav mx-auto gap-4">
             <li class="nav-item"><a class="nav-link text-secondary" href="#hero-sec">Home</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#about-us">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#">Consultations</a></li>
@@ -218,6 +220,80 @@
   </script>
 
   @yield ('scripts')
+
+  {{-- Message Ai --}}
+  <div class="message-ai" id="message-ai-bubble">
+    <div class="message-ai-icon">
+      <i class="ri-message-3-line"></i>
+    </div>
+    <div class="message-ai-text">
+      Message Ai
+    </div>
+  </div>
+
+  {{-- Chat Window --}}
+  <div class="chat-window" id="chat-window" style="display: none;">
+    <div class="chat-header">
+      <div class="profile-pic">
+        <img src="{{ asset('project-images/CEO-profile.webp') }}" alt="agent">
+        <span class="status-indicator"></span>
+      </div>
+      <span class="chat-title">We are online and ready for help.</span>
+      <button class="close-chat" id="close-chat-btn"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="chat-body">
+      <div class="message-input-area">
+        <div class="title">Talk To Mobile App Expert</div>
+        <div class="subtitle">We typically reply in a few minutes</div>
+        <button class="send-btn"><i class="ri-send-plane-fill"></i></button>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <div class="footer-icons">
+        <i class="ri-home-4-line"></i>
+        <i class="ri-message-3-line"></i>
+      </div>
+      <div class="powered-by">
+        <span>Powered by tawk.to</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const messageBubble = document.getElementById('message-ai-bubble');
+      const chatWindow = document.getElementById('chat-window');
+      const closeChatBtn = document.getElementById('close-chat-btn');
+
+      messageBubble.addEventListener('click', function() {
+        chatWindow.style.display = 'block';
+        messageBubble.style.display = 'none';
+      });
+
+      closeChatBtn.addEventListener('click', function() {
+        chatWindow.style.display = 'none';
+        messageBubble.style.display = 'block';
+      });
+    });
+  </script>
+
+  @yield ('scripts')
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/68569c34151f2b190c06b3a3/1iu954bno';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>

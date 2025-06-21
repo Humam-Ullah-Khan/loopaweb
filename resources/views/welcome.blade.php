@@ -81,20 +81,20 @@
     <div class="row my-5 align-items-center">
       <div class="col-md-6">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4 p-0">
             <div class="position-relative text-center">
               <img src="{{ asset('project-images/CEO-profile-2.png') }}" alt="Humam Ullah" class="img-fluid"
-                style="max-width: 300px;">
+                style="max-width: 200px;">
               <div class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;">
-                <img src="/project-images/saylani.png" alt="saylani" style="width: 350px; opacity: 0.2;">
+                <img src="/project-images/saylani.png" alt="saylani" style="width: 250px; opacity: 0.2;">
               </div>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="mt-5 ms-md-4">
+          <div class="col-md-8">
+            <div class="mt-5 ms-md-5">
               <h5 class="fw-bold">Humam Ullah</h5>
-              <p class="text-muted mb-1">C.E.O & Web App Developer</p>
+              <p class="text-muted mb-1 fw-semibold"><i>C.E.O</i> & Website Developer</p>
               <div class="d-flex align-items-center mb-2">
                 <img src="/project-images/saylani.png" alt="Saylani" style="width: 20px; height: 20px;" class="me-2">
                 <span class="fw-bold">Saylani</span>
@@ -110,7 +110,7 @@
 
       <div class="col-md-6">
         <div class="d-flex justify-content-end align-items-center mb-3">
-          <a href="#" class="text-primary fw-bold text-decoration-none">See all members (5)</a>
+          <a href="#" class="text-primary fw-bold">See all members (5)</a>
         </div>
         <div id="teamCarousel" class="carousel slide">
           <div class="carousel-inner">
@@ -193,11 +193,11 @@
           <div class="d-flex justify-content-end gap-2 mt-3">
             <button class="btn btn-primary rounded-circle" type="button" data-bs-target="#teamCarousel"
               data-bs-slide="prev">
-              <i class="ri-arrow-left-s-line"></i>
+              <i class="ri-arrow-left-line"></i>
             </button>
             <button class="btn btn-primary rounded-circle" type="button" data-bs-target="#teamCarousel"
               data-bs-slide="next">
-              <i class="ri-arrow-right-s-line"></i>
+              <i class="ri-arrow-right-line"></i>
             </button>
           </div>
         </div>

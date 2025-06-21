@@ -52,7 +52,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--font-heading);
+    font-family: var(--font-heading);
 }
 
 .navbar {
@@ -62,6 +62,10 @@ h5 {
 .navbar-nav .nav-item .nav-link {
     font-family: var(--font-navs);
     font-weight: normal !important;
+}
+
+.navbar-nav .nav-item .nav-link:active {
+    color: var(--accent-color);
 }
 
 .navbar-nav .nav-item .nav-link:hover {
