@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LOOPAWEB - Home</title>
+  <link rel="icon" href="project-images/favicon.png" type="image/png" style="border-radius: 50%">
+
 
   <link rel="stylesheet" href="{{ asset('project-css\styles.css') }}">
 
@@ -23,7 +25,7 @@
 
 <body>
 
-  <nav class="navbar sticky-top navbar-expand-lg border-bottom py-4 px-4">
+  <nav id="default-navbar" class="navbar navbar-expand-lg border-bottom py-4 px-4">
     <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
@@ -38,7 +40,7 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#"><i class="bi bi-house-door"></i> Home</a>
+            <a class="nav-link text-secondary fw-semibold" href="#"><i class="ri-home-9-fill"></i> Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary fw-semibold" href="#">About Us</a>
@@ -67,10 +69,63 @@
           </li>
         </ul>
         <!-- Request Pricing Button -->
-        <a href="#" class="btn btn-primary fw-semibold px-4">Request pricing</a>
+        <a href="#" class="btn btn-primary fw-semibold px-4 py-2">Request pricing</a>
       </div>
     </div>
   </nav>
+
+  <div id="scrolled-navbar" class="fixed-top bg-white border-bottom"
+    style="display: none; box-shadow: 0 2px 4px rgba(0,0,0,.1);">
+    <div class="container-fluid p-0">
+      <div class="d-flex justify-content-between align-items-center py-2 px-md-4 px-1">
+        <div class="d-flex align-items-center">
+          <div class="position-relative d-inline-block">
+            <img src="{{ asset('project-images/CEO-profile.webp') }}" class="rounded-circle"
+              style="width: 45px; height: 45px; object-fit: cover;">
+            <span style="width:15px; height:15px; bottom:1px; right:-2px;"
+              class="position-absolute bg-success border border-white rounded-circle"></span>
+          </div>
+          <div class="ms-2">
+            <div class="fw-semibold fs-4" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Humam Ullah</div>
+            <div class="small text-muted my-1" style="font-size: 0.75em; font-family: Verdana, Geneva, Tahoma, sans-serif;">C.E.O @ LoopaWeb Software</div>
+            <div class="d-flex align-items-center" style="font-size: 0.75em;">
+              <img src="/project-images/saylani.png" alt="saylani-certified" width="15px" class="me-1">
+              <span class="fw-semibold">Certified</span>
+              <i class="ri-verified-badge-fill mx-1 text-primary"></i>
+              <i class="ri-star-fill text-primary me-1"></i>
+              <span class="fw-bold">5.0</span>
+              <span class="text-decoration-underline ms-1">(4)</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2 flex-column py-2">
+          <a href="#" class="btn btn-primary me-2 position-relative">
+            <i class="ri-checkbox-blank-circle-fill" style="font-size: 7px; color: #31ff9f;"></i> Chat with us
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+          </a>
+          <a href="#" class="btn btn-primary">
+            <i class="ri-vidicon-line"></i> Book a call
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg py-0 bg-white">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Consultations</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">App industries</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Reviews</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
 
   @yield ('content')
 
@@ -82,7 +137,8 @@
         <div class="col-md-3">
           <img src="{{ asset('project-images/Logo.png') }}" alt="loopaweb Logo" width="240" class="mb-3">
           <div class="mb-3">
-            <a href="#" class="me-2 fs-3 text-dark text-decoration-none"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" class="me-2 fs-3 text-dark text-decoration-none"><i
+                class="ri-linkedin-box-fill"></i></a>
             <a href="#" class="me-2 fs-3 text-dark text-decoration-none"><i class="ri-global-line"></i></a>
             <a href="#" class="me-2 fs-3 text-dark text-decoration-none"><i class="ri-instagram-line"></i></a>
             <a href="#" class="me-2 fs-3 text-dark text-decoration-none"><i class="ri-twitter-x-line"></i></a>
@@ -145,6 +201,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const defaultNavbar = document.getElementById('default-navbar');
+      const scrolledNavbar = document.getElementById('scrolled-navbar');
+      const navbarHeight = defaultNavbar.offsetHeight;
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > navbarHeight) {
+          scrolledNavbar.style.display = 'block';
+        } else {
+          scrolledNavbar.style.display = 'none';
+        }
+      });
+    });
+  </script>
 
   @yield ('scripts')
 </body>

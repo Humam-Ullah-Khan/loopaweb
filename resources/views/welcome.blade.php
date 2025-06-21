@@ -13,7 +13,7 @@
           </div> --}}
 
           <img src="/project-images/certified-img.png" alt="" width="250px">
-          <h3>Meet Humam Ullah, <span class="fs-5">C.E.O Behind</span></h3>
+          <h4  class="my-3">Meet Humam Ullah, <span style="font-size: 15px">C.E.O Behind</span></h4>
         </div>
         <h2 class="fw-bold mb-3">
           Your <span class="text-primary">Trusted</span> Web App Development Company for Every Industry!
@@ -26,17 +26,17 @@
           <!-- Right Side Content -->
           <div class="ms-3">
             <span
-              style="background: #e6f4ea; color: #1dbf73; font-weight: 600; border-radius: 8px; padding: 2px 10px; font-size: 1rem; vertical-align: middle;">Best
+              style="background: #b8f7ca; color: #00934f; border-radius: 8px; padding: 1px 10px; font-size: 12px; vertical-align: middle;">Best
               Seller</span>
             <div>
-              <span style="font-weight: bold; font-size: 1.5rem; color: #222; letter-spacing: -1px;">fiverr.</span>
+              <span style="font-weight: bold; font-size: 1.5rem; color: #222; letter-spacing: -1.5px;">fiverr<i class="ri-checkbox-blank-circle-fill text-success" style="font-size: 7px"></i></span>
               <!-- Stars -->
               <span>
-                <i class="bi bi-star-fill" style="color: #f7d100; font-size: 1.5rem;"></i>
-                <i class="bi bi-star-fill" style="color: #f7d100; font-size: 1.5rem;"></i>
-                <i class="bi bi-star-fill" style="color: #f7d100; font-size: 1.5rem;"></i>
-                <i class="bi bi-star-fill" style="color: #f7d100; font-size: 1.5rem;"></i>
-                <i class="bi bi-star-fill" style="color: #f7d100; font-size: 1.5rem;"></i>
+                <i class="ri-star-s-fill" style="color: #f7d100;"></i>
+                <i class="ri-star-s-fill" style="color: #f7d100;"></i>
+                <i class="ri-star-s-fill" style="color: #f7d100;"></i>
+                <i class="ri-star-s-fill" style="color: #f7d100;"></i>
+                <i class="ri-star-s-fill" style="color: #f7d100;"></i>
               </span>
             </div>
             <div>
@@ -49,19 +49,22 @@
           </div>
         </div>
 
-        <div>
+        <div class="py-3">
           <a href="#" class="btn btn-primary me-2 mb-2 py-2 px-4"> <i class="ri-circle-fill"
-              style="color: greenyellow"></i> Chat with us</a>
+              style="color: #1DBF73"></i> Chat with us</a>
           <a href="#" class="btn btn-primary mb-2 py-2 px-4"> <i class="ri-video-on-line"></i> Book a meeting</a>
         </div>
       </div>
       <!-- Right Side: Image -->
-      <div class="col-md-6 text-center py-3 p-0">
-        <video class="img-fluid rounded shadow" style="max-width: 600px;" autoplay muted loop playsinline>
+      <div class="col-md-6 text-center py-3 px-2">
+        <video class="img-fluid rounded shadow" style="max-width: 100%;" autoplay muted loop playsinline>
           <source src="/project-images/intro-video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
   </div>
+
+  {{-- About Us  --}}
+  
 @endsection
