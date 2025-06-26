@@ -204,4 +204,98 @@
       </div>
     </div>
   </div>
+
+
+  <div class="web-industries py-5">
+    <div class="container">
+      <div class="col-12 mb-3">
+        <h2 class="fw-bold">Web Industries</h2>
+
+        <div class="col-md-6">
+          <small>
+            <b>LookaWeb</b> builds websites for every industry. Our experienced team creates powerful and responsive websites
+            for
+            education, healthcare, e-commerce, entertainment, and beyond. Each website is crafted to meet unique goals
+            and
+            deliver real results. With LookaWeb, every industry gets high-quality, user-friendly web solutions.
+          </small>
+        </div>
+      </div>
+      <div class="position-relative">
+        <button id="industries-prev"
+          class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y z-2"
+          style="left: -30px;" type="button">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <div id="industries-carousel" class="d-flex flex-nowrap overflow-auto"
+          style="scroll-behavior: smooth; gap: 24px;">
+          <div class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0" style="width: 320px;">
+            <img src="/project-images/e-commerce.png" class="d-block w-100 rounded-top-2" alt="E-commerce Website">
+            <div class="d-flex justify-content-between align-items-center p-2">
+              <p class="m-0 fw-semibold">E-commerce Website</p>
+              <a class="btn btn-light">Learn more</a>
+            </div>
+          </div>
+          <div class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0" style="width: 320px;">
+            <img src="/project-images/Business.png" class="d-block w-100 rounded-top-2" alt="Business Website">
+            <div class="d-flex justify-content-between align-items-center p-2">
+              <p class="m-0 fw-semibold">Business Website</p>
+              <a class="btn btn-light">Learn more</a>
+            </div>
+          </div>
+          <div class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0" style="width: 320px;">
+            <img src="/project-images/Real-Estate.png" class="d-block w-100 rounded-top-2" alt="Real-Estate Website">
+            <div class="d-flex justify-content-between align-items-center p-2">
+              <p class="m-0 fw-semibold">Real-Estate Website</p>
+              <a class="btn btn-light">Learn more</a>
+            </div>
+          </div>
+          <div class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0" style="width: 320px;">
+            <img src="/project-images/HealthCare.png" class="d-block w-100 rounded-top-2" alt="Health Care Website">
+            <div class="d-flex justify-content-between align-items-center p-2">
+              <p class="m-0 fw-semibold">Health Care Website</p>
+              <a class="btn btn-light">Learn more</a>
+            </div>
+          </div>
+          <div class="industry-card bg-secondary-subtle rounded-2 flex-shrink-0" style="width: 320px;">
+            <img src="/project-images/Educational.png" class="d-block w-100 rounded-top-2" alt="Education Website">
+            <div class="d-flex justify-content-between align-items-center p-2">
+              <p class="m-0 fw-semibold">Education Website</p>
+              <a class="btn btn-light">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <button id="industries-next"
+          class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y z-2"
+          style="right: -30px;" type="button">
+          <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+@endsection
+
+@section('scripts')
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.getElementById('industries-carousel');
+      const prevBtn = document.getElementById('industries-prev');
+      const nextBtn = document.getElementById('industries-next');
+      const cardWidth = 340; // width + gap
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: -cardWidth,
+          behavior: 'smooth'
+        });
+      });
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: cardWidth,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 @endsection

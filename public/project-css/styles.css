@@ -144,3 +144,11 @@ h5 {
 .home-hero-section {
     font-family: var(--font-heading);
 }
+
+#industries-carousel {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+#industries-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
