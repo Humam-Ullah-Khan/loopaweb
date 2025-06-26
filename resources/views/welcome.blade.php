@@ -213,7 +213,8 @@
 
         <div class="col-md-6">
           <small>
-            <b>LookaWeb</b> builds websites for every industry. Our experienced team creates powerful and responsive websites
+            <b>LoopaWeb</b> builds websites for every industry. Our experienced team creates powerful and responsive
+            websites
             for
             education, healthcare, e-commerce, entertainment, and beyond. Each website is crafted to meet unique goals
             and
@@ -274,7 +275,84 @@
     </div>
   </div>
 
-
+  <div class="portfolio-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h2 class="fw-bold">Portfolio</h2>
+          <p class="text-secondary mb-3 fw-semibold">
+            LoopaWeb has successfully delivered 20+ web and mobile projects for clients in various industries. Our
+            clients love us, giving 4+ reviews and a 5-star rating. We help bring your ideas to life with care and
+            quality.
+          </p>
+          <p class="text-secondary mb-4 fw-semibold">
+            Book a meeting for a simple chat on how to build your app or website. Our team will show you each step to make
+            your idea real.
+          </p>
+          <!-- Book free consultation button -->
+          <a href="#" class="btn btn-primary">
+            <i class="ri-video-on-line"></i> Book free consultation
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <div class="position-relative">
+            <button id="portfolio-prev"
+              class="btn btn-light rounded-circle position-absolute top-50 start-0 translate-middle-y z-2"
+              style="left: -30px;" type="button">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <div id="portfolio-carousel" class="d-flex flex-nowrap overflow-auto gap-3">
+              <div class="portfolio-card bg-white rounded-3 flex-shrink-0" style="width: 370px;">
+                <img src="/project-images/portfolio-01.png" class="w-100 rounded-2 shadow-sm" alt="UBU App">
+                <div class="d-flex justify-content-between p-2">
+                  <div>
+                    <h6 class="fw-semibold mb-1">Vegetable Store</h6>
+                    <p class="mb-2 text-muted">Online Delivery website</p>
+                  </div>
+                  <a class="btn btn-light align-self-start">Learn more</a>
+                </div>
+              </div>
+              <div class="portfolio-card bg-white rounded-3 flex-shrink-0" style="width: 370px;">
+                <img src="/project-images/portfolio-02.png" class="w-100 rounded-2 shadow-sm" alt="HVAC HUB">
+                <div class="d-flex justify-content-between p-2">
+                  <div>
+                    <h6 class="fw-semibold mb-1">Business</h6>
+                    <p class="mb-2 text-muted">Business Website</p>
+                  </div>
+                  <a class="btn btn-light align-self-start">Learn more</a>
+                </div>
+              </div>
+              <div class="portfolio-card bg-white rounded-3 flex-shrink-0" style="width: 370px;">
+                <img src="/project-images/portfolio-03.png" class="w-100 rounded-2 shadow-sm" alt="EduPro LMS">
+                <div class="d-flex justify-content-between p-2">
+                  <div>
+                    <h6 class="fw-semibold mb-1">Education ( LMS )</h6>
+                    <p class="mb-2 text-muted">LMS Website</p>
+                  </div>
+                  <a class="btn btn-light align-self-start">Learn more</a>
+                </div>
+              </div>
+              <div class="portfolio-card bg-white rounded-3 flex-shrink-0" style="width: 370px;">
+                <img src="/project-images/portfolio-04.jpg" class="w-100 rounded-2 shadow-sm" alt="E-Shop">
+                <div class="d-flex justify-content-between p-2">
+                  <div>
+                    <h6 class="fw-semibold mb-1">E-Shop</h6>
+                    <p class="mb-2 text-muted">E-commerce Website</p>
+                  </div>
+                  <a class="btn btn-light align-self-start">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <button id="portfolio-next"
+              class="btn btn-light rounded-circle position-absolute top-50 end-0 translate-middle-y z-2"
+              style="right: -30px;" type="button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
 
 @section('scripts')
@@ -296,6 +374,47 @@
           behavior: 'smooth'
         });
       });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // ...existing industries carousel code...
+      const portfolioCarousel = document.getElementById('portfolio-carousel');
+      const portfolioPrev = document.getElementById('portfolio-prev');
+      const portfolioNext = document.getElementById('portfolio-next');
+      const portfolioCardWidth = 394; // width + gap
+      const totalPortfolioCards = portfolioCarousel.children.length;
+
+      function scrollPortfolioNext() {
+        if (portfolioCarousel.scrollLeft >= portfolioCardWidth * (totalPortfolioCards - 1) - 10) {
+          portfolioCarousel.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+          });
+        } else {
+          portfolioCarousel.scrollBy({
+            left: portfolioCardWidth,
+            behavior: 'smooth'
+          });
+        }
+      }
+
+      function scrollPortfolioPrev() {
+        if (portfolioCarousel.scrollLeft <= 0) {
+          portfolioCarousel.scrollTo({
+            left: portfolioCardWidth * (totalPortfolioCards - 1),
+            behavior: 'smooth'
+          });
+        } else {
+          portfolioCarousel.scrollBy({
+            left: -portfolioCardWidth,
+            behavior: 'smooth'
+          });
+        }
+      }
+      portfolioPrev.addEventListener('click', scrollPortfolioPrev);
+      portfolioNext.addEventListener('click', scrollPortfolioNext);
     });
   </script>
 @endsection

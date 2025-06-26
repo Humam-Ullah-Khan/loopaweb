@@ -145,10 +145,12 @@ h5 {
     font-family: var(--font-heading);
 }
 
-#industries-carousel {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+#industries-carousel,
+#portfolio-carousel {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
-#industries-carousel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+#industries-carousel::-webkit-scrollbar,
+#portfolio-carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
