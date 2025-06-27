@@ -46,20 +46,10 @@
             <a class="nav-link text-secondary fw-semibold" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#">Consultations</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-secondary fw-semibold" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Web Industries <i class="ri-arrow-down-s-line"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Industry 1</a></li>
-              <li><a class="dropdown-item" href="#">Industry 2</a></li>
-            </ul>
+            <a class="nav-link text-secondary fw-semibold" href="#web-industries"> Web Industries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#">Portfolio</a>
+            <a class="nav-link text-secondary fw-semibold" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary fw-semibold" href="#">Services</a>
@@ -117,9 +107,8 @@
           <ul class="navbar-nav mx-auto gap-4">
             <li class="nav-item"><a class="nav-link text-secondary" href="#hero-sec">Home</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#about-us">About Us</a></li>
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">Consultations</a></li>
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">App industries</a></li>
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#web-industries">Web industries</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#portfolio">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#">Services</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#">Reviews</a></li>
           </ul>

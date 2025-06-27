@@ -206,7 +206,7 @@
   </div>
 
 
-  <div class="web-industries py-5">
+  <div class="web-industries py-5" id="web-industries">
     <div class="container">
       <div class="col-12 mb-3">
         <h2 class="fw-bold">Web Industries</h2>
@@ -275,7 +275,7 @@
     </div>
   </div>
 
-  <div class="portfolio-section py-5">
+  <div class="portfolio-section py-5" id="portfolio">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mb-4 mb-lg-0">
