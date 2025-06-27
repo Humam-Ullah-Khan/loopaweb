@@ -6,12 +6,6 @@
       <!-- Left Side: Text and Buttons -->
       <div class="col-md-6 mb-4 mb-md-0">
         <div class=" mb-2">
-          {{-- <img src="/project-images/CEO-profile.webp" alt="CEO" class="rounded-circle me-2" width="68" height="68">
-          <div>
-            <div class="fw-bold">HUMAM ULLAH  <i class="ri-verified-badge-fill text-primary fs-4"></i></div>
-            <small class="text-muted">C.E.O Behind</small>
-          </div> --}}
-
           <img src="/project-images/certified-img.png" alt="" width="250px">
           <h4 class="my-3">Meet Humam Ullah, <span style="font-size: 15px">C.E.O Behind</span></h4>
         </div>
@@ -206,7 +200,7 @@
   </div>
 
 
-  <div class="web-industries py-5" id="web-industries">
+  <div class="web-industries py-5">
     <div class="container">
       <div class="col-12 mb-3">
         <h2 class="fw-bold">Web Industries</h2>
@@ -275,7 +269,7 @@
     </div>
   </div>
 
-  <div class="portfolio-section py-5" id="portfolio">
+  <div class="portfolio-section py-5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mb-4 mb-lg-0">
@@ -353,6 +347,89 @@
       </div>
     </div>
   </div>
+
+  <div class="services-section container py-5" id="services">
+    <div class="row align-items-stretch">
+      <!-- Left Info Block -->
+      <div class="col-lg-4 mb-4 mb-lg-0 d-flex flex-column justify-content-center">
+        <h2 class="fw-bold mb-3">Services We Provide</h2>
+        <p class="text-secondary mb-4" style="max-width: 350px;">
+          Discover our range of services to match your project needs. Provide us with your details, and we'll customize a
+          proposal just for you.
+        </p>
+        <button class="btn btn-primary px-4 py-2" style="width: fit-content;">Request Pricing</button>
+      </div>
+      <!-- Services Carousel -->
+      <div class="col-lg-8 position-relative">
+        <button id="services-prev"
+          class="btn btn-primary rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 d-none"
+          style="left: -24px;" type="button">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <div id="services-carousel" class="d-flex flex-nowrap overflow-auto gap-4 px-2"
+          style="scroll-behavior: smooth;">
+
+          <!-- Service Card 1 -->
+          <div class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+            style="width: 280px; min-height: 230px;">
+            <div class="mb-3"><img src="/project-images/Website-dev.svg" alt="Website Dev" style="height: 38px;">
+            </div>
+            <h5 class="fw-bold mb-2">Website Development</h5>
+            <ul class="list-unstyled mb-2">
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Custom Website</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Wordpress</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Maintenance</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+            style="width: 280px; min-height: 230px;">
+            <div class="mb-3"><img src="/project-images/Ui-Ux.svg" alt="Mobile App" style="height: 38px;">
+            </div>
+            <h5 class="fw-bold mb-2">UI/UX Design</h5>
+            <ul class="list-unstyled mb-2">
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Design</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Landing Page Design</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Ux Design</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+            style="width: 280px; min-height: 230px;">
+            <div class="mb-3"><img src="/project-images/e-commerce-dev.svg" alt="UI/UX" style="height: 38px;">
+            </div>
+            <h5 class="fw-bold mb-2">Ecommerce Store</h5>
+            <ul class="list-unstyled mb-2">
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Development</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Design</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Maintenance</li>
+            </ul>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card bg-white border rounded-3 flex-shrink-0 p-4"
+            style="width: 280px; min-height: 230px;">
+            <div class="mb-3"><img src="/project-images/software-dev.svg" alt="UI/UX" style="height: 38px;">
+            </div>
+            <h5 class="fw-bold mb-2">Software Development</h5>
+            <ul class="list-unstyled mb-2">
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Software Development</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Web App Development</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Databases</li>
+            </ul>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+        <button id="services-next"
+          class="btn btn-primary rounded-circle position-absolute top-50 end-0 translate-middle-y z-2"
+          style="right: -24px;" type="button">
+          <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 @endsection
 
 @section('scripts')
@@ -415,6 +492,35 @@
       }
       portfolioPrev.addEventListener('click', scrollPortfolioPrev);
       portfolioNext.addEventListener('click', scrollPortfolioNext);
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.getElementById('services-carousel');
+      const prevBtn = document.getElementById('services-prev');
+      const nextBtn = document.getElementById('services-next');
+      const cardWidth = 340; // width + gap
+      function updateButtons() {
+        prevBtn.classList.toggle('d-none', carousel.scrollLeft <= 10);
+        nextBtn.classList.toggle('d-none', carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 10);
+      }
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: -cardWidth,
+          behavior: 'smooth'
+        });
+        setTimeout(updateButtons, 400);
+      });
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+          left: cardWidth,
+          behavior: 'smooth'
+        });
+        setTimeout(updateButtons, 400);
+      });
+      carousel.addEventListener('scroll', updateButtons);
+      updateButtons();
     });
   </script>
 @endsection

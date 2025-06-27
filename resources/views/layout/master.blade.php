@@ -71,7 +71,7 @@
         <div class="d-flex align-items-center">
           <div class="position-relative d-inline-block">
             <img src="{{ asset('project-images/CEO-profile.webp') }}" class="rounded-circle"
-              style="width: 45px; height: 45px; object-fit: cover;">
+              style="width: 75px; height: 75px; object-fit: cover;">
             <span style="width:15px; height:15px; bottom:1px; right:-2px;"
               class="position-absolute bg-success border border-white rounded-circle"></span>
           </div>

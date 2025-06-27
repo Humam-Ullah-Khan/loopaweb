@@ -146,11 +146,42 @@ h5 {
 }
 
 #industries-carousel,
-#portfolio-carousel {
+#portfolio-carousel,
+#services-carousel {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
 }
 #industries-carousel::-webkit-scrollbar,
-#portfolio-carousel::-webkit-scrollbar {
+#portfolio-carousel::-webkit-scrollbar,
+#services-carousel::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
+}
+
+.services-section .service-card {
+    box-shadow: 0 2px 12px rgba(60, 60, 60, 0.06);
+    transition: box-shadow 0.2s;
+    padding: 1.25rem !important;
+}
+.services-section .service-card:hover {
+    box-shadow: 0 4px 24px rgba(60, 60, 60, 0.12);
+}
+.services-section .service-card h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+.services-section .service-card ul li {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+.services-section .service-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    #services-carousel {
+        gap: 1rem !important;
+    }
+    .services-section .service-card {
+        width: 260px !important;
+    }
 }
