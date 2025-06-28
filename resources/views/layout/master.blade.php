@@ -122,7 +122,7 @@
 
 
 
-  <footer class="footer-section mt-5 pt-5 pb-3 bg-white">
+  {{-- <footer class="footer-section mt-5 pt-5 pb-3 bg-white">
     <div class="container">
       <div class="row gy-5 align-items-start">
         <div class="col-md-3">
@@ -186,7 +186,7 @@
           </div>
         </div>
       </div>
-  </footer>
+  </footer> --}}
 
   {{-- Bootstrap js --}}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -204,64 +204,6 @@
         } else {
           scrolledNavbar.style.display = 'none';
         }
-      });
-    });
-  </script>
-
-  @yield ('scripts')
-
-  {{-- Message Ai --}}
-  <div class="message-ai" id="message-ai-bubble">
-    <div class="message-ai-icon">
-      <i class="ri-message-3-line"></i>
-    </div>
-    <div class="message-ai-text">
-      Message Ai
-    </div>
-  </div>
-
-  {{-- Chat Window --}}
-  <div class="chat-window" id="chat-window" style="display: none;">
-    <div class="chat-header">
-      <div class="profile-pic">
-        <img src="{{ asset('project-images/CEO-profile.webp') }}" alt="agent">
-        <span class="status-indicator"></span>
-      </div>
-      <span class="chat-title">We are online and ready for help.</span>
-      <button class="close-chat" id="close-chat-btn"><i class="ri-close-line"></i></button>
-    </div>
-    <div class="chat-body">
-      <div class="message-input-area">
-        <div class="title">Talk To Mobile App Expert</div>
-        <div class="subtitle">We typically reply in a few minutes</div>
-        <button class="send-btn"><i class="ri-send-plane-fill"></i></button>
-      </div>
-    </div>
-    <div class="chat-footer">
-      <div class="footer-icons">
-        <i class="ri-home-4-line"></i>
-        <i class="ri-message-3-line"></i>
-      </div>
-      <div class="powered-by">
-        <span>Powered by tawk.to</span>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const messageBubble = document.getElementById('message-ai-bubble');
-      const chatWindow = document.getElementById('chat-window');
-      const closeChatBtn = document.getElementById('close-chat-btn');
-
-      messageBubble.addEventListener('click', function() {
-        chatWindow.style.display = 'block';
-        messageBubble.style.display = 'none';
-      });
-
-      closeChatBtn.addEventListener('click', function() {
-        chatWindow.style.display = 'none';
-        messageBubble.style.display = 'block';
       });
     });
   </script>
