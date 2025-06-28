@@ -52,10 +52,10 @@
             <a class="nav-link text-secondary fw-semibold" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#">Services</a>
+            <a class="nav-link text-secondary fw-semibold" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary fw-semibold" href="#">Reviews</a>
+            <a class="nav-link text-secondary fw-semibold" href="#fiverr-reviews">Reviews</a>
           </li>
         </ul>
         <!-- Request Pricing Button -->
@@ -85,7 +85,7 @@
               <span class="fw-semibold">Certified</span>
               <i class="ri-verified-badge-fill mx-1 text-primary"></i>
               <i class="ri-star-fill text-primary me-1 ms-2"></i>
-              <span class="fw-bold">5.0</span>
+              <span class="fw-bold">4.4</span>
               <span class="text-decoration-underline ms-1">( 4 )</span>
             </div>
           </div>
@@ -93,7 +93,7 @@
         <div class="d-flex align-items-center gap-2 flex-column py-2">
           <a href="#" class="btn btn-primary me-2 position-relative d-flex align-items-center">
             <i class="ri-checkbox-blank-circle-fill me-2" style="font-size: 7px; color: #31ff9f;"></i> Chat with us
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">2</span>
           </a>
           <a href="#" class="btn btn-primary me-2">
             <i class="ri-vidicon-line me-2"></i> Book a call
@@ -109,8 +109,8 @@
             <li class="nav-item"><a class="nav-link text-secondary" href="#about-us">About Us</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#web-industries">Web industries</a></li>
             <li class="nav-item"><a class="nav-link text-secondary" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link text-secondary" href="#">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#fiverr-reviews">Reviews</a></li>
           </ul>
         </div>
       </div>

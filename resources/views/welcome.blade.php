@@ -1,6 +1,35 @@
 @extends ('layout.master')
 
 @section('content')
+  <!-- Welcome Modal -->
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow-lg border-0 rounded-4">
+        <div class="modal-header border-0 bg-primary text-white rounded-top-4">
+          <div class="d-flex align-items-center gap-2">
+            <img src="/project-images/favicon.png" alt="LoopaWeb Logo"
+              style="width: 40px; height: 40px; border-radius: 50%;">
+            <h5 class="modal-title fw-bold" id="welcomeModalLabel">Welcome to LoopaWeb!</h5>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <img src="/project-images/certified-img.png" alt="Certified" style="width: 220px;" class="mb-3">
+          <h4 class="fw-bold mb-2">We're Excited to Have You Here!</h4>
+          <p class="text-secondary mb-3">
+            Looking for a reliable team to build your next web project?<br>
+            <span class="fw-semibold text-primary">Let’s create something amazing together!</span>
+          </p>
+          <a href="#" id="openTawkChat" class="btn btn-primary px-4 py-2 mb-2"><i
+              class="ri-chat-3-line me-2"></i>Chat Now</a>
+          <a href="#" class="btn btn-outline-primary px-4 py-2 mb-2 ms-2"><i class="ri-vidicon-line me-2"></i>Book a
+            Free Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{-- Hero Section --}}
   <div class="home-hero-section container py-5" id="hero-sec">
     <div class="row">
       <!-- Left Side: Text and Buttons -->
@@ -90,7 +119,8 @@
               <h5 class="fw-bold">Humam Ullah</h5>
               <p class="text-muted mb-1 fw-semibold"><i>C.E.O</i> & Website Developer</p>
               <div class="d-flex align-items-center mb-2">
-                <img src="/project-images/saylani.png" alt="Saylani" style="width: 20px; height: 20px;" class="me-2">
+                <img src="/project-images/saylani.png" alt="Saylani" style="width: 20px; height: 20px;"
+                  class="me-2">
                 <span class="fw-bold">Saylani</span>
                 <span class="ms-1">Certified</span>
               </div>
@@ -197,10 +227,12 @@
         </div>
       </div>
     </div>
+
+    <hr class="mt-5">
   </div>
 
-
-  <div class="web-industries py-5">
+  {{-- Web Industries --}}
+  <div class="web-industries py-5" id="web-industries">
     <div class="container">
       <div class="col-12 mb-3">
         <h2 class="fw-bold">Web Industries</h2>
@@ -266,10 +298,13 @@
           <i class="ri-arrow-right-line"></i>
         </button>
       </div>
+
+      <hr class="mt-5">
     </div>
   </div>
 
-  <div class="portfolio-section py-5">
+  {{-- portfolio --}}
+  <div class="portfolio-section py-5" id="portfolio">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5 mb-4 mb-lg-0">
@@ -345,9 +380,12 @@
           </div>
         </div>
       </div>
+
+      <hr class="mt-5">
     </div>
   </div>
 
+  {{-- services --}}
   <div class="services-section container py-5" id="services">
     <div class="row align-items-stretch">
       <!-- Left Info Block -->
@@ -376,9 +414,12 @@
             </div>
             <h5 class="fw-bold mb-2">Website Development</h5>
             <ul class="list-unstyled mb-2">
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Custom Website</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Wordpress</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Maintenance</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Custom
+                Website</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Wordpress</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Website Maintenance</li>
             </ul>
           </div>
 
@@ -389,9 +430,12 @@
             </div>
             <h5 class="fw-bold mb-2">UI/UX Design</h5>
             <ul class="list-unstyled mb-2">
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Design</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Landing Page Design</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Ux Design</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Website Design</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Landing Page Design</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Ux
+                Design</li>
             </ul>
           </div>
 
@@ -402,9 +446,12 @@
             </div>
             <h5 class="fw-bold mb-2">Ecommerce Store</h5>
             <ul class="list-unstyled mb-2">
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Development</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Design</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Website Maintenance</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Website Development</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Website Design</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Website Maintenance</li>
             </ul>
           </div>
 
@@ -415,9 +462,12 @@
             </div>
             <h5 class="fw-bold mb-2">Software Development</h5>
             <ul class="list-unstyled mb-2">
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Software Development</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Web App Development</li>
-              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Databases</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Software Development</li>
+              <li class="d-flex align-items-center mb-2"><i class="ri-checkbox-circle-line text-primary me-2"></i>Web
+                App Development</li>
+              <li class="d-flex align-items-center mb-2"><i
+                  class="ri-checkbox-circle-line text-primary me-2"></i>Databases</li>
             </ul>
           </div>
           <!-- Add more cards as needed -->
@@ -429,10 +479,201 @@
         </button>
       </div>
     </div>
+    <hr class="mt-5">
+  </div>
+
+  <!-- Fiverr Reviews -->
+  <div class="fiverr-reviews-section py-5" id="fiverr-reviews">
+    <div class="container">
+      <!-- Header: Fiverr Verified and Review Count -->
+      <div class="d-flex align-items-center mb-2">
+        <span class="badge bg-dark text-white me-2" style="font-size: 0.95rem; letter-spacing: 1px;">FIVERR
+          <span style="color: #1DBF73">REVIEWS</span></span>
+        <span class="fw-semibold text-muted" style="font-size: 1.1rem;">4 Reviews</span>
+      </div>
+      <div class="row g-4 align-items-start mb-4">
+        <!-- Star Bars -->
+        <div class="col-md-6">
+          <div class="mb-2">
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-semibold me-2">5 Stars</span>
+              <div class="flex-grow-1 bg-white rounded-pill me-2" style="height: 8px;">
+                <div class="bg-success rounded-pill" style="width: 75%; height: 8px;"></div>
+              </div>
+              <span class="text-muted small">(3)</span>
+            </div>
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-semibold me-2">4 Stars</span>
+              <div class="flex-grow-1 bg-white rounded-pill me-2" style="height: 8px;">
+                <div class="bg-info rounded-pill" style="width: 0%; height: 8px;"></div>
+              </div>
+              <span class="text-muted small">(0)</span>
+            </div>
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-semibold me-2">3 Stars</span>
+              <div class="flex-grow-1 bg-white rounded-pill me-2" style="height: 8px;">
+                <div class="bg-warning rounded-pill" style="width: 25%; height: 8px;"></div>
+              </div>
+              <span class="text-muted small">(1)</span>
+            </div>
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-semibold me-2">2 Stars</span>
+              <div class="flex-grow-1 bg-white rounded-pill me-2" style="height: 8px;">
+                <div class="bg-secondary rounded-pill" style="width: 0%; height: 8px;"></div>
+              </div>
+              <span class="text-muted small">(0)</span>
+            </div>
+            <div class="d-flex align-items-center mb-1">
+              <span class="fw-semibold me-2">1 Star</span>
+              <div class="flex-grow-1 bg-white rounded-pill me-2" style="height: 8px;">
+                <div class="bg-secondary rounded-pill" style="width: 0%; height: 8px;"></div>
+              </div>
+              <span class="text-muted small">(0)</span>
+            </div>
+          </div>
+          <div class="text-muted small">1-4 out of 4 Reviews</div>
+        </div>
+        <!-- Rating Breakdown -->
+        <div class="col-md-6">
+          <div class="fw-bold mb-2">Rating Breakdown</div>
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="text-muted">Seller communication level</span>
+              <span class="text-primary ms-2"><i class="ri-star-s-fill"></i> 4.5</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="text-muted">Quality of delivery</span>
+              <span class="text-primary ms-2"><i class="ri-star-s-fill"></i> 4.5</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="text-muted">Value of delivery</span>
+              <span class="text-primary ms-2"><i class="ri-star-s-fill"></i> 4.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reviews List -->
+      <div class="d-flex flex-column gap-4">
+        <!-- Review 1 -->
+        <div class="border rounded-3 p-4">
+          <div class="d-flex align-items-center mb-1">
+            <span class="fw-bold me-2">imran_dev999</span>
+            <span class="badge bg-light text-dark border me-2"><i class="ri-repeat-line me-1"></i>Repeat Client</span>
+            <span class="badge bg-secondary me-2">Pakistan</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <span class="text-warning me-2">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+            </span>
+            <span class="text-muted small">1 month ago</span>
+          </div>
+          <div class="mb-2">Humam Ullah excelled in software development with PROFESSIONALISM that truly stood out.
+            Working with him was a pleasure; his DEEP UNDERSTANDING, stellar responsiveness, and cooperative spirit made
+            the process seamless. Highly recommended!</div>
+          <div class="text-muted small">Helpful? <a href="#" class="text-decoration-none">Yes</a> <a
+              href="#" class="text-decoration-none ms-2">No</a></div>
+        </div>
+        <!-- Review 2 -->
+        <div class="rounded-3 border p-4">
+          <div class="d-flex align-items-center mb-1">
+            <span class="fw-bold me-2">imran_dev999</span>
+            <span class="badge bg-light text-dark border me-2"><i class="ri-repeat-line me-1"></i>Repeat Client</span>
+            <span class="badge bg-secondary me-2">Pakistan</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <span class="text-warning me-2">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+            </span>
+            <span class="text-muted small">1 month ago</span>
+          </div>
+          <div class="mb-2">It was very good experience work with him. He is professional and creative in logo design.
+            Highly recommended for website designing.</div>
+          <div class="text-muted small">Helpful? <a href="#" class="text-decoration-none">Yes</a> <a
+              href="#" class="text-decoration-none ms-2">No</a></div>
+        </div>
+        <!-- Review 3 -->
+        <div class="rounded-3 border p-4">
+          <div class="d-flex align-items-center mb-1">
+            <span class="fw-bold me-2">imran_dev999</span>
+            <span class="badge bg-light text-dark border me-2"><i class="ri-repeat-line me-1"></i>Repeat Client</span>
+            <span class="badge bg-secondary me-2">Pakistan</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <span class="text-warning me-2">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </span>
+            <span class="text-muted small">5 days ago</span>
+          </div>
+          <div class="mb-2">This project just went well but too much time and multiple delivery will cost further more.
+          </div>
+          <div class="text-muted small">Helpful? <a href="#" class="text-decoration-none">Yes</a> <a
+              href="#" class="text-decoration-none ms-2">No</a></div>
+        </div>
+        <!-- Review 4 -->
+        <div class="rounded-3 border p-4">
+          <div class="d-flex align-items-center mb-1">
+            <span class="fw-bold me-2">gizm0dder</span>
+            <span class="badge bg-secondary me-2">Mauritius</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <span class="text-warning me-2">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+            </span>
+            <span class="text-muted small">3 months ago</span>
+          </div>
+          <div class="mb-2">First time working with dev and it was a very good experience. Developer provided quality
+            work. It was front work, and he made sure the design is working properly, is responsive and without any bulky
+            code. We required the code to be tailwind and alpine js only, and it was indeed quality work. Thanks for that.
+          </div>
+          <div class="text-muted small">Helpful? <a href="#" class="text-decoration-none">Yes</a> <a
+              href="#" class="text-decoration-none ms-2">No</a></div>
+        </div>
+      </div>
+    </div>
   </div>
 @endsection
 
 @section('scripts')
+  {{-- Welocome Message Modal --}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        var welcomeModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+        welcomeModal.show();
+      }, 2000); // 25 seconds
+    });
+  </script>
+
+  {{-- Clicking on the chat now button in Modal --}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var chatBtn = document.getElementById('openTawkChat');
+      if (chatBtn) {
+        chatBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (typeof Tawk_API !== 'undefined' && Tawk_API.maximize) {
+            Tawk_API.maximize();
+          }
+        });
+      }
+    });
+  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const carousel = document.getElementById('industries-carousel');
